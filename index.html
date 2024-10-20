@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Rule Engine</h1>
+        <form id="ruleForm">
+            <label for="ruleInput">Enter Rule:</label>
+            <input type="text" id="ruleInput" placeholder="e.g. (age > 30 AND department = 'Sales')">
+            <button type="button" onclick="submitRule()">Submit Rule</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="{% Static 'js/main.js' %}"></script>
+</body>
+</html>
